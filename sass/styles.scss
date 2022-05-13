@@ -1,5 +1,9 @@
 @import "./variables";
 
-h1 {
-    color: $blue;
+.header {
+    background-color: $primary-color;
+}
+
+.header__logo {
+    width: 10rem;
 }

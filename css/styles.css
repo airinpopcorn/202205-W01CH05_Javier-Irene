@@ -1,3 +1,8 @@
-h1 {
-  color: #5e81d1;
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+.header {
+  background-color: #16ffbd;
+}
+
+.header__logo {
+  width: 10rem;
 }
