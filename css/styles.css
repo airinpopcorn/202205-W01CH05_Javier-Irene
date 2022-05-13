@@ -1,11 +1,93 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Oswald", sans-serif;
+  font-style: none;
+  letter-spacing: 0.18rem;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
-    background-color: #16ffbd;
+  display: flex;
+  justify-content: space-between;
+  background-color: #16ffbd;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.header .header__logo {
+  width: 10rem;
+  padding-top: 1rem;
+}
+.header .header__menu {
+  display: none;
 }
 
-.header__logo {
-    width: 10rem;
+.footer__options {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
+.footer {
+  background-color: #080d14;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer__title {
+  display: flex;
+  justify-content: center;
+  color: #16ffbd;
+  margin-top: 1rem;
+}
+.footer .footer__title div {
+  margin-top: 0;
+}
+.footer .footer__title span {
+  margin: 0 0.5rem;
+  text-decoration: line-through;
+  text-decoration-color: #ff8cab;
+  text-decoration-thickness: 0.15rem;
+}
+.footer .footer__sections {
+  margin-top: 3rem;
+}
+.footer .footer__title--small {
+  font-size: 0.7rem;
+  margin-top: 3rem;
+}
+.footer .sections__details {
+  margin-top: 3rem;
+}
+.footer .sections__details--margin {
+  margin-top: 0rem;
+}
+.footer .details__info {
+  margin-top: 3rem;
+}
+.footer h4 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.footer p {
+  display: flex;
+  justify-content: center;
+  color: #16ffbd;
+}
+.footer .options__item--line {
+  text-decoration: line-through;
+  color: #ff8cab;
+}
