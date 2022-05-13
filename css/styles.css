@@ -1,17 +1,11 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     color: $blue;
- *   |            ^^^^^
- *   '
- *   sass/styles.scss 4:12  root stylesheet */
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      color: $blue;\d\a   \2502             ^^^^^\a   \2575 \a   sass/styles.scss 4:12  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+.header {
+    background-color: #16ffbd;
 }
+
+.header__logo {
+    width: 10rem;
+}
+
+
