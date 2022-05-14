@@ -18,21 +18,22 @@ a:visited {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #16ffbd;
-  padding-top: 0.5rem;
+  padding: 0.5rem 1rem 0 1rem;
 }
 .header__burguer-logo {
   width: 1.3rem;
 }
 .header__logo {
+  display: block;
   width: 10rem;
   padding-top: 1rem;
 }
-.header__menu {
+.header__menu li {
   display: none;
 }
-.header__menu .menu__item {
+.header__menu li .menu__item {
   list-style: none;
 }
 
@@ -49,6 +50,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5rem;
 }
 .footer .footer__title {
   display: flex;
@@ -96,13 +98,73 @@ a:visited {
   color: #ff8cab;
 }
 
+.section-social__icons {
+  display: flex;
+  width: 3.8rem;
+  align-content: center;
+}
+.section-social__icons img {
+  padding: 0.5rem;
+}
+
+.main {
+  background-color: #16ffbd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__video iframe {
+  display: none;
+}
+.main__video img {
+  width: 100%;
+}
+.main .snake-div {
+  width: 3rem;
+}
+.main__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main__intro .intro__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main__article .article__post {
+  display: flex;
+  flex-direction: column;
+}
+.main__article .article__post article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main__article img {
+  width: 50%;
+}
+
 @media (min-width: 600px) {
+  .header {
+    justify-content: center;
+  }
   .header__burguer-logo,
 .header p {
     display: none;
   }
   .header__logo {
-    padding: 2rem;
+    display: flex;
+    width: 10rem;
+    padding-top: 1rem;
   }
   .header__menu {
     display: flex;
@@ -114,7 +176,21 @@ a:visited {
     padding: 0 1.5rem;
     font-size: 0.7rem;
   }
+  .header__menu li {
+    display: initial;
+    justify-items: center;
+  }
+  .header__menu li .menu__item {
+    list-style: none;
+  }
   .header__menu--mobil {
     display: none;
+  }
+
+  .main__video img {
+    display: none;
+  }
+  .main__video iframe {
+    display: block;
   }
 }
