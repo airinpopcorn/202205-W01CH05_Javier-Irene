@@ -1,0 +1,176 @@
+@import "./variables";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: $font;
+    font-style: none;
+    letter-spacing: 0.18rem;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    padding: 0.5rem 1rem 0 1rem;
+
+    &__burguer-logo {
+        width: 1.3rem;
+    }
+    &__logo {
+        display: block;
+        width: 10rem;
+        padding-top: 1rem;
+    }
+
+    &__menu li {
+        display: none;
+        .menu__item {
+            list-style: none;
+        }
+    }
+}
+.footer__options {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    background-color: $secondary-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+    .footer__title {
+        display: flex;
+        justify-content: center;
+        color: $primary-color;
+        margin-top: 1rem;
+        div {
+            margin-top: 0;
+        }
+        span {
+            margin: 0 0.5rem;
+            text-decoration: line-through;
+            text-decoration-color: $hover-color;
+            text-decoration-thickness: 0.15rem;
+        }
+    }
+    .footer__sections {
+        margin-top: 3rem;
+    }
+
+    .footer__title--small {
+        font-size: 0.7rem;
+        margin-top: 3rem;
+    }
+    .sections__details {
+        margin-top: 3rem;
+    }
+
+    .sections__details--margin {
+        margin-top: 0rem;
+    }
+
+    .details__info {
+        margin-top: 3rem;
+    }
+
+    h4 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        color: $primary-color;
+    }
+
+    .options__item--line {
+        text-decoration: line-through;
+        color: $hover-color;
+    }
+}
+
+@media (min-width: 600px) {
+    .header {
+        justify-content: center;
+        &__burguer-logo,
+        p {
+            display: none;
+        }
+        &__logo {
+            display: flex;
+            width: 10rem;
+            padding-top: 1rem;
+        }
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            .menu__item {
+                padding: 0 1.5rem;
+                font-size: 0.7rem;
+            }
+        }
+        &__menu li {
+            display: initial;
+            justify-items: center;
+            .menu__item {
+                list-style: none;
+            }
+        }
+        &__menu--mobil {
+            display: none;
+        }
+    }
+}
+.section-social__icons {
+    display: flex;
+    width: 3.8rem;
+    align-content: center;
+    img {
+        padding: 0.5rem;
+    }
+}
+
+// Just for about
+
+.about {
+    background-color: $primary-color;
+    color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    h4,
+    p {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    }
+    h4 {
+        padding: 3rem 0 3rem 0;
+        font-size: 1.2rem;
+    }
+    p {
+    }
+}
+.text__mark {
+    width: 0.3rem;
+    margin: 0 0.6rem 0 0.6rem;
+}
