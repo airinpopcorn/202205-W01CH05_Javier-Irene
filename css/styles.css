@@ -18,18 +18,22 @@ a:visited {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #16ffbd;
   padding-top: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
-.header .header__logo {
+.header__burguer-logo {
+  width: 1.3rem;
+}
+.header__logo {
   width: 10rem;
   padding-top: 1rem;
 }
-.header .header__menu {
+.header__menu {
   display: none;
+}
+.header__menu .menu__item {
+  list-style: none;
 }
 
 .footer__options {
@@ -90,4 +94,27 @@ a:visited {
 .footer .options__item--line {
   text-decoration: line-through;
   color: #ff8cab;
+}
+
+@media (min-width: 600px) {
+  .header__burguer-logo,
+.header p {
+    display: none;
+  }
+  .header__logo {
+    padding: 2rem;
+  }
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+  .header__menu .menu__item {
+    padding: 0 1.5rem;
+    font-size: 0.7rem;
+  }
+  .header__menu--mobil {
+    display: none;
+  }
 }
