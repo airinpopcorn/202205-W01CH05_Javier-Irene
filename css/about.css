@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Oswald", sans-serif;
+  font-style: none;
+  letter-spacing: 0.18rem;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #16ffbd;
+  padding: 0.5rem 1rem 0 1rem;
+}
+.header__burguer-logo {
+  width: 1.3rem;
+}
+.header__logo {
+  display: block;
+  width: 10rem;
+  padding-top: 1rem;
+}
+.header__menu li {
+  display: none;
+}
+.header__menu li .menu__item {
+  list-style: none;
+}
+
+.footer__options {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background-color: #080d14;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.footer .footer__title {
+  display: flex;
+  justify-content: center;
+  color: #16ffbd;
+  margin-top: 1rem;
+}
+.footer .footer__title div {
+  margin-top: 0;
+}
+.footer .footer__title span {
+  margin: 0 0.5rem;
+  text-decoration: line-through;
+  text-decoration-color: #ff8cab;
+  text-decoration-thickness: 0.15rem;
+}
+.footer .footer__sections {
+  margin-top: 3rem;
+}
+.footer .footer__title--small {
+  font-size: 0.7rem;
+  margin-top: 3rem;
+}
+.footer .sections__details {
+  margin-top: 3rem;
+}
+.footer .sections__details--margin {
+  margin-top: 0rem;
+}
+.footer .details__info {
+  margin-top: 3rem;
+}
+.footer h4 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.footer p {
+  display: flex;
+  justify-content: center;
+  color: #16ffbd;
+}
+.footer .options__item--line {
+  text-decoration: line-through;
+  color: #ff8cab;
+}
+
+@media (min-width: 600px) {
+  .header {
+    justify-content: center;
+  }
+  .header__burguer-logo,
+.header p {
+    display: none;
+  }
+  .header__logo {
+    display: flex;
+    width: 10rem;
+    padding-top: 1rem;
+  }
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+  .header__menu .menu__item {
+    padding: 0 1.5rem;
+    font-size: 0.7rem;
+  }
+  .header__menu li {
+    display: initial;
+    justify-items: center;
+  }
+  .header__menu li .menu__item {
+    list-style: none;
+  }
+  .header__menu--mobil {
+    display: none;
+  }
+}
+.section-social__icons {
+  display: flex;
+  width: 3.8rem;
+  align-content: center;
+}
+.section-social__icons img {
+  padding: 0.5rem;
+}
+
+.about {
+  background-color: #16ffbd;
+  color: #080d14;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+.about h4,
+.about p {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+.about h4 {
+  padding: 3rem 0 3rem 0;
+  font-size: 1.2rem;
+}
+.text__mark {
+  width: 0.3rem;
+  margin: 0 0.6rem 0 0.6rem;
+}
