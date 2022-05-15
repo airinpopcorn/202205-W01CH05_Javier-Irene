@@ -116,6 +116,7 @@ a:visited {
 }
 .main__video {
   position: relative;
+  margin-bottom: 2rem;
 }
 .main__video video {
   display: none;
@@ -129,6 +130,7 @@ a:visited {
 }
 .main .snake-div {
   width: 3rem;
+  margin: 2rem 0;
 }
 .main__intro {
   display: flex;
@@ -140,6 +142,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 }
 .main__article {
   display: flex;
@@ -147,15 +150,21 @@ a:visited {
   align-items: center;
   text-align: center;
 }
+.main__article .article__title {
+  margin-bottom: 2rem;
+}
 .main__article .article__post {
   display: flex;
   flex-direction: column;
 }
-.main__article .article__post article {
+.main__article .article__post .post__teacher,
+.main__article .article__post .post__pizza,
+.main__article .article__post .post__shop {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 2rem;
 }
 .main__article .article__post .post__image {
   width: 100%;
@@ -202,5 +211,54 @@ a:visited {
   .main__video video {
     display: block;
     max-width: 100%;
+  }
+
+  .main__article .article__post {
+    flex-direction: row;
+  }
+
+  .footer__sections {
+    min-width: 100%;
+  }
+  .footer .section__menu {
+    display: none;
+  }
+  .footer .section__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer .section__left {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .section__left div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer .section__left .sections__details--margin {
+    margin-bottom: 1.5rem;
+  }
+  .footer .sections__details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .footer .sections__details .section-social__icons {
+    justify-content: center;
+  }
+  .footer .sections__details h4 {
+    margin-top: 0;
+  }
+  .footer .section__right .details__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    margin-top: 1.5rem;
+  }
+  .footer .section__right .details__info--margin {
+    margin-top: 0;
   }
 }
