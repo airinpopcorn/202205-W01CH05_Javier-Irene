@@ -108,20 +108,24 @@ a:visited {
   object-fit: cover;
 }
 
-.gallery img {
-  width: 100%;
+body {
+  background-color: #16ffbd;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 2rem 0 -4rem 0;
 }
 .gallery__column {
-  flex: 33%;
+  flex: 100%;
+  line-height: 0;
 }
-
-img {
+.gallery img {
+  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
   width: 100%;
+  margin: -2rem 0 -2rem 0;
 }
 
 @media (min-width: 600px) {
@@ -159,6 +163,6 @@ img {
   }
 
   .gallery__column {
-    flex: 100%;
+    flex: 33.3%;
   }
 }
