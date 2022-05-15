@@ -209,4 +209,53 @@ a:visited {
             max-width: 100%;
         }
     }
+
+    .footer {
+        &__sections {
+            min-width: 100%;
+        }
+        .section__menu {
+            display: none;
+        }
+        .section__info {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .section__left {
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .sections__details--margin {
+                margin-bottom: 1.5rem;
+            }
+        }
+        .sections__details {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+            .section-social__icons {
+                justify-content: center;
+            }
+            h4 {
+                margin-top: 0;
+            }
+        }
+        .section__right {
+            .details__info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                text-align: end;
+                margin-top: 1.5rem;
+            }
+            .details__info--margin {
+                margin-top: 0;
+            }
+        }
+    }
 } ;
