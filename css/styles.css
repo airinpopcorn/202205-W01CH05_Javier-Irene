@@ -36,6 +36,9 @@ a:visited {
 .header__menu li .menu__item {
   list-style: none;
 }
+.header .menu__item:hover a {
+  color: #ff8cab;
+}
 
 .footer__options {
   list-style-type: none;
@@ -153,6 +156,13 @@ a:visited {
 .main__article .article__title {
   margin-bottom: 2rem;
 }
+.main__article .article__title p {
+  text-decoration: underline;
+}
+.main__article .article__title p:hover {
+  color: #ff8cab;
+  cursor: pointer;
+}
 .main__article .article__post {
   display: flex;
   flex-direction: column;
@@ -250,6 +260,10 @@ a:visited {
   }
   .footer .sections__details h4 {
     margin-top: 0;
+  }
+  .footer .sections__details p:hover {
+    color: #ff8cab;
+    cursor: pointer;
   }
   .footer .section__right .details__info {
     display: flex;

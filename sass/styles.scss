@@ -37,6 +37,11 @@ a:visited {
             list-style: none;
         }
     }
+    .menu__item:hover {
+        a {
+            color: $hover-color;
+        }
+    }
 }
 .footer__options {
     list-style-type: none;
@@ -155,6 +160,13 @@ a:visited {
         text-align: center;
         .article__title {
             margin-bottom: 2rem;
+            p {
+                text-decoration: underline;
+            }
+            p:hover {
+                color: $hover-color;
+                cursor: pointer;
+            }
         }
         .article__post {
             display: flex;
@@ -258,6 +270,10 @@ a:visited {
             }
             h4 {
                 margin-top: 0;
+            }
+            p:hover {
+                color: $hover-color;
+                cursor: pointer;
             }
         }
         .section__right {
